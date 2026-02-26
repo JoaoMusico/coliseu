@@ -1,0 +1,12 @@
+# Matter.js and other libraries if downloaded
+node_modules/
+dist/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db

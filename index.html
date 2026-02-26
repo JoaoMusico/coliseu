@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clay Gladiators Arena</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <!-- SEO -->
+    <meta name="description" content="Um jogo de combate baseado em física onde gladiadores de massinha lutam em uma arena circular.">
+    <!-- Matter.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-overlay">
+            <div id="round-info">Round: <span id="round-number">1</span></div>
+            <div id="status-message"></div>
+            <div id="controls-hint">
+                P1: WASD + Espaço/Q | P2: Setas + J/L
+            </div>
+        </div>
+    </div>
+    <script src="scripts/physics.js"></script>
+    <script src="scripts/entities.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
